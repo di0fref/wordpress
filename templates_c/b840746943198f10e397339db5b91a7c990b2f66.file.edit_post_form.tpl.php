@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-23 11:44:08
-         compiled from "/Users/fredrik/www/wordpress/wp-content/plugins/wpforum//tpls/edit_post_form.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:432626919549952ff423873-68023458%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-30 15:50:17
+         compiled from "/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/edit_post_form.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:121000381254a2c9b90db906-20038056%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'f55f9a1aee7b0516211c894c4cdd5cb15c818e25' => 
+    'b840746943198f10e397339db5b91a7c990b2f66' => 
     array (
-      0 => '/Users/fredrik/www/wordpress/wp-content/plugins/wpforum//tpls/edit_post_form.tpl',
-      1 => 1419335034,
+      0 => '/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/edit_post_form.tpl',
+      1 => 1419954394,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '432626919549952ff423873-68023458',
+  'nocache_hash' => '121000381254a2c9b90db906-20038056',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_549952ff4fbd50_71175244',
   'variables' => 
   array (
     'trail' => 0,
@@ -24,12 +22,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'nonce' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_54a2c9b916b215_07424030',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_549952ff4fbd50_71175244')) {function content_549952ff4fbd50_71175244($_smarty_tpl) {?><div class="forum-trail"><?php echo $_smarty_tpl->tpl_vars['trail']->value;?>
+<?php if ($_valid && !is_callable('content_54a2c9b916b215_07424030')) {function content_54a2c9b916b215_07424030($_smarty_tpl) {?><div class="forum-trail"><?php echo $_smarty_tpl->tpl_vars['trail']->value;?>
 </div>
 <h3>Editing: <?php echo $_smarty_tpl->tpl_vars['post']->value['subject'];?>
 </h3>
-<div style="width: 500px">
+<div class="forum-form">
 	<form name="forum-form-edit-post" id="forum-form-edit-post" method="post" role="form">
 
 		<div class="form-group">

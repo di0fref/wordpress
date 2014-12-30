@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-28 16:08:06
-         compiled from "/Users/fredrik/www/wordpress/wp-content/plugins/wpforum//tpls/posts.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:229898703548d8723367bb5-93238807%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-30 15:42:07
+         compiled from "/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/posts.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:186571360354a2c7cf3d6634-55758048%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '352eb04e58e125b883a9b51d392f3baab7cc2bfa' => 
+    'ff2a828f2d118eedfe1a5556807cd91f4a4c7c11' => 
     array (
-      0 => '/Users/fredrik/www/wordpress/wp-content/plugins/wpforum//tpls/posts.tpl',
-      1 => 1419782855,
+      0 => '/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/posts.tpl',
+      1 => 1419952919,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '229898703548d8723367bb5-93238807',
+  'nocache_hash' => '186571360354a2c7cf3d6634-55758048',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_548d87235bd7c1_51862306',
   'variables' => 
   array (
     'trail' => 0,
@@ -29,8 +27,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_54a2c7cfa02153_03281778',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_548d87235bd7c1_51862306')) {function content_548d87235bd7c1_51862306($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_timesince')) include '/Users/fredrik/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/modifier.timesince.php';
+<?php if ($_valid && !is_callable('content_54a2c7cfa02153_03281778')) {function content_54a2c7cfa02153_03281778($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_timesince')) include '/Users/fref/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/modifier.timesince.php';
 ?><div class="forum-trail"><?php echo $_smarty_tpl->tpl_vars['trail']->value;?>
 </div>
 <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>

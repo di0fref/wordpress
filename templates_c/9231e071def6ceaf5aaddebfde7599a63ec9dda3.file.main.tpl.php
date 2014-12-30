@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-28 16:08:48
-         compiled from "/Users/fredrik/www/wordpress/wp-content/plugins/wpforum//tpls/main.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1649308652548d90c5b20621-66891730%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-30 15:41:25
+         compiled from "/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/main.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:209119919954a2c6f26240b8-58284722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '3eeeafef1b755f7fe6d7248fcc2da1f6ccd54438' => 
+    '9231e071def6ceaf5aaddebfde7599a63ec9dda3' => 
     array (
-      0 => '/Users/fredrik/www/wordpress/wp-content/plugins/wpforum//tpls/main.tpl',
-      1 => 1419782926,
+      0 => '/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/main.tpl',
+      1 => 1419954083,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1649308652548d90c5b20621-66891730',
+  'nocache_hash' => '209119919954a2c6f26240b8-58284722',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_548d90c5cdce35_91507518',
+  'unifunc' => 'content_54a2c6f28fef07_09480858',
   'variables' => 
   array (
     'trail' => 0,
@@ -26,14 +26,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'data' => 0,
     'border' => 0,
     'cat' => 0,
-    'thread' => 0,
     'config' => 0,
     'forum' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_548d90c5cdce35_91507518')) {function content_548d90c5cdce35_91507518($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/Users/fredrik/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/function.cycle.php';
-if (!is_callable('smarty_modifier_timesince')) include '/Users/fredrik/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/modifier.timesince.php';
+<?php if ($_valid && !is_callable('content_54a2c6f28fef07_09480858')) {function content_54a2c6f28fef07_09480858($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/Users/fref/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/function.cycle.php';
+if (!is_callable('smarty_modifier_timesince')) include '/Users/fref/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/modifier.timesince.php';
 ?><div class="forum-trail"><?php echo $_smarty_tpl->tpl_vars['trail']->value;?>
 </div>
 <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
@@ -61,8 +60,8 @@ $_smarty_tpl->tpl_vars['button']->_loop = true;
 			</ul>
 		</div>
 	<?php }?>
+	
 	<?php if (isset($_smarty_tpl->tpl_vars['buttons']->value['buttons'])) {?>
-		
 		<?php  $_smarty_tpl->tpl_vars['button'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['button']->_loop = false;
  $_smarty_tpl->tpl_vars['name'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['buttons']->value['buttons']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -99,13 +98,15 @@ $_smarty_tpl->tpl_vars['forum']->_loop = true;
 ">
 				<td>
 					<p class="forumtitle">
-						<img width="22" class="forumicon" title="<?php echo ucfirst($_smarty_tpl->tpl_vars['thread']->value['icon']);?>
-" alt="<?php echo ucfirst($_smarty_tpl->tpl_vars['thread']->value['icon']);?>
-" src="<?php echo $_smarty_tpl->tpl_vars['config']->value['images_dir'];?>
+						<img width="22" class="forumicon" src="<?php echo $_smarty_tpl->tpl_vars['config']->value['images_dir'];?>
 /category.png">
 						<a href="<?php echo $_smarty_tpl->tpl_vars['forum']->value['href'];?>
 "><?php echo $_smarty_tpl->tpl_vars['forum']->value['name'];?>
-</a></p>
+</a>
+						<?php echo $_smarty_tpl->tpl_vars['forum']->value['links']['rss'];?>
+
+					</p>
+
 					<span class="forumdescription small"><?php echo $_smarty_tpl->tpl_vars['forum']->value['description'];?>
 </span>
 				</td>
