@@ -2,9 +2,9 @@
 Contributors: stvwhtly
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GP9YMEPUGV24A
 Tags: contact, global, details, options, info, phone, fax, mobile, email, address, form
-Requires at least: 2.8.2
-Tested up to: 3.4.2
-Stable tag: 0.7.6
+Requires at least: 3.9
+Tested up to: 4.0
+Stable tag: 0.8.1
 
 Adds the ability to easily enter and display contact information.
 
@@ -12,9 +12,11 @@ Adds the ability to easily enter and display contact information.
 
 Adds the ability to enter contact information and output the details in your posts, pages or templates.
 
-Use the shortcode `[contact type="phone"]` to display any of the contact details, or use the function call `<?php if (function_exists('contact_detail')) { contact_detail('phone'); } ?>`.
+Use the shortcode `[contact type="phone"]` to display any of the contact details, or use the function call `<?php if ( function_exists( 'contact_detail' ) ) { contact_detail( 'phone' ); } ?>`.
 
 Once you have defined a contact email address, use the shortcode `[contact type="form"]` to output the contact form.
+
+**Languages:** Also available in Español (Spanish) and українська (Ukrainian by Michael Yunat).
 
 == Installation ==
 
@@ -35,19 +37,19 @@ Navigate to the settings page by clicking on `Settings` on the left hand menu, a
 
 Yes, it is possible to modify the contact detail fields using the `contact_details` filter.
 
-`add_filter('contact_details', function($details) {
+`add_filter( 'contact_details', function( $details ) {
 	// Add a simple text input...
-	$details['twitter'] = __('Twitter');
+	$details['twitter'] = __( 'Twitter' );
 	// Add a new textarea...
 	$details['bank'] = array(
-		'label' => __('Bank'),
+		'label' => __( 'Bank' ),
 		'input' => 'textarea'
 	);
 	// Remove an existing field...
-	unset(details['fax']);
+	unset( details['fax'] );
 	// You must always return the modified array...
 	return $details;
-});`
+} );`
 
 = What contact details can I store? =
 
@@ -57,13 +59,13 @@ Current available contact fields are: `phone`, `fax`, `mobile`, `email` and `add
 
 You can use the following function call to output details in your templates:
 
-<?php if (function_exists('contact_detail')) { contact_detail('fax'); } ?>
+<?php if ( function_exists( 'contact_detail' ) ) { contact_detail( 'fax' ); } ?>
 
 = How do you fetch contact details without outputting the value? =
 
 The fourth parameter passed to `contact_detail()` determines whether the value is returned, by setting the value to false.
 
-`$phone = contact_detail('phone', '<b>', '</b>', false);`
+`$phone = contact_detail( 'phone', '<b>', '</b>', false );`
 
 The above code will fetch the phone number stored and wrap the response in bold tags.
 
@@ -77,12 +79,27 @@ This file should be placed within your theme directory and should include the pr
 
 I suggest you use the `contact.php` file used by the plugin as a starting point / template.
 
+= Can I translate your plugin to another language? =
+
+Yes, of course. If you would like to translate this plugin to another language, please provide me with the releavant Poedit files.
+
+I will be certain to include and attribute any contributions to those who provide any translations.
+
 == Screenshots ==
 
 1. The contact details management page.
 
 == Changelog ==
 
+= 0.8.1 =
+* Readme changes to language list.
+* Set from email as sender email.
+= 0.8 =
+* Introduced `contact-send` filter.
+* Ability to disable spamcheck via shortcode using `spamcheck="false"`.
+= 0.7.7 =
+* Added Ukrainian (uk_UA) language translation.
+* Allow for additional attributes to be passed through to template files.
 = 0.7.6 =
 * Re-added email address to settings page, lost during recent update.
 * Modified upgrade process to work now that register_activation_hook no longer fires for plugin updates.
@@ -91,10 +108,10 @@ I suggest you use the `contact.php` file used by the plugin as a starting point 
 = 0.7.4 =
 * Removed old plugin contributor and author details.
 = 0.7.3 =
-* Reolving the SVN mix-up tagging versions.
+* Resolving the SVN mix-up tagging versions.
 = 0.7.2 =
 * Integration of i18n abilities, using Spanish (es_ES) as an example.
-* Added the ablity to modify the fields shown to the details page.
+* Added the ability to modify the fields shown to the details page.
 * Updated donate link ;)
 = 0.7.1 =
 * Bug fix to shortcode function call that displays contact details.
@@ -120,7 +137,7 @@ I suggest you use the `contact.php` file used by the plugin as a starting point 
 * Fixed errors when error reporting is set to all.
 * Added details screenshot.
 = 0.2 =
-* The function `contact_details` now outputs by default instead of having to echo the repsonse.
+* The function `contact_details` now outputs by default instead of having to echo the response.
 * Function calls now includes before, after and echo options.
 = 0.1.1 =
 * Updated/Corrected plugin name.

@@ -1,3 +1,6 @@
 [submodule "wp-content/themes/strapboot"]
 	path = wp-content/themes/strapboot
 	url = git@github.com:di0fref/strapboot.git
+[submodule "wp-content/plugins/wpforum"]
+	path = wp-content/plugins/wpforum
+	url = git@github.com:di0fref/wpforum.git

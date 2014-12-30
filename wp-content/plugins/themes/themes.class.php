@@ -42,10 +42,11 @@ class fref_Themes
 
 
 			$img = "<img width='125' class='media-object img-thumbnail' src='http://fahlstad.se/wp-content/themes_lib/theme_images/" . $theme->thumb . "'>";
+			$thumb = "<img class='media-object img-thumbnail' src='".IMAGE_URL."/$theme->thumb&amp;height=".get_option("themes_options_thumb_height")."&amp;width=".get_option("themes_options_thumb_width")."' alt='image' />";
 
 			$p .= "
 			<article class='post-636 post type-post status-publish format-standard hentry category-plugins tag-jetpack tag-widgets media odd'>
-					<a class='pull-left' href=''>$img</a>
+					<a class='pull-left' href=''>$thumb</a>
 					<div class='col-md-4'>
 						<div class='media-body'>
 							<h2 class='media-heading' id='post-636'><a href=''>{$theme->name}</a></h2>

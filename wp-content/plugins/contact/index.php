@@ -3,22 +3,22 @@
 Plugin Name: Contact
 Plugin URI: http://wordpress.org/extend/plugins/contact/
 Description: Adds the ability to enter global contact information.
-Version: 0.7.6
+Version: 0.8.1
 Author: StvWhtly
 Author URI: http://stv.whtly.com
 Text Domain: contact
 */
 
-if ( ! class_exists( 'ContactDetails' ) )
+if ( !class_exists( 'ContactDetails' ) )
 {
 	class ContactDetails
 	{
-		var $name = 'Contact Details';
-		var $tag = 'contact';
-		var $options = array();
-		var $messages = array();
-		var $details = array();
-		function ContactDetails()
+		public $name = 'Contact Details';
+		public $tag = 'contact';
+		public $options = array();
+		public $messages = array();
+		public $details = array();
+		public function __construct()
 		{
 			add_action( 'init', array( &$this, 'init' ) );
 			if ( is_admin() ) {
@@ -30,7 +30,7 @@ if ( ! class_exists( 'ContactDetails' ) )
 				add_filter( 'contact_detail', array( &$this, 'build'), 1 );
 			}
 		}
-		function init() {
+		public function init() {
 			$this->details = array(
 				'phone' => __( 'Phone', 'contact' ),
 				'fax' => __( 'Fax', 'contact' ),
@@ -41,7 +41,7 @@ if ( ! class_exists( 'ContactDetails' ) )
 					'input' => 'textarea'
 				)
 			);
-			$this->details = (array) apply_filters( $this->tag.'_details', $this->details, 1 );
+			$this->details = (array) apply_filters( $this->tag . '_details', $this->details, 1 );
 			if ( $options = get_option( $this->tag ) ) {
 				$this->options = $options;
 			} else {
@@ -49,30 +49,31 @@ if ( ! class_exists( 'ContactDetails' ) )
 					'email' => get_option( 'admin_email' )
 				) );
 			}
-			load_plugin_textdomain( $this->tag, false, basename( dirname(__FILE__) ).'/languages/' );
+			load_plugin_textdomain(
+				$this->tag,
+				false,
+				basename( dirname( __FILE__ ) ) . '/languages/'
+			);
 		}
-		function admin_menu()
+		public function admin_menu()
 		{
 			add_options_page(
-				$this->name,
-				$this->name,
+				__( $this->name, 'contact' ),
+				__( $this->name, 'contact' ),
 				'manage_options',
 				$this->tag,
 				array( &$this, 'settings' )
 			);
 		}
-		
-		function admin_init()
+		public function admin_init()
 		{
-			register_setting( $this->tag.'_options', $this->tag );
+			register_setting( $this->tag . '_options', $this->tag );
 		}
-		
-		function settings()
+		public function settings()
 		{
 			include_once( 'settings.php' );
 		}
-		
-		function plugin_row_meta( $links, $file )
+		public function plugin_row_meta( $links, $file )
 		{
 			$plugin = plugin_basename( __FILE__ );
 			if ( $file == $plugin ) {
@@ -80,14 +81,14 @@ if ( ! class_exists( 'ContactDetails' ) )
 					$links,
 					array( sprintf(
 						'<a href="options-general.php?page=%s">%s</a>',
-						$this->tag, __( 'Edit Details' )
+						$this->tag,
+						__( 'Edit Details', 'contact' )
 					) )
 				);
 			}
 			return $links;
 		}
-		
-		function build( $args )
+		public function build( $args )
 		{
 			extract( shortcode_atts( array(
 				'type' => false,
@@ -99,64 +100,65 @@ if ( ! class_exists( 'ContactDetails' ) )
 			if ( strlen( $value ) == 0 ) {
 				return;
 			}
-			$detail = $before.$value.$after;
+			$detail = $before . $value . $after;
 			if ( $echo ) {
 				echo $detail;
 			} else {
 				return $detail;
 			}
 		}
-		
-		function value( $type = false )
+		public function value( $type = false )
 		{
 			if ( ( false != $type )  && array_key_exists( $type, $this->options ) ) {
 				return ( 'address' == $type ? nl2br( $this->options[$type] ) : $this->options[$type] );
 			}
 			return null;
 		}
-		
-		function shortcode( $atts )
+		public function shortcode( $atts )
 		{
 			extract( shortcode_atts( array(
 				'type' => false,
 				'include' => false
 			), $atts ) );
 			if ( 'form' == $type ) {
-				return $this->form( $include );
+				return $this->form( $include, $atts );
 			}
 			return contact_detail( $type, false, false, false );
 		}
-		
-		function form( $include = false )
+		public function form( $include = false, $atts = false )
 		{
 			ob_start();
 			if ( ! isset( $this->options['email'] ) || ! is_email( $this->options['email'] ) ) {
-				return __( 'You must define an email address on the options page in order to display the contact form.' );
-			}			
+				return __( 'You must define an email address on the options page in order to display the contact form.', 'contact' );
+			}
 			if ( isset( $_POST['contact'] ) ) {
 				$this->messages['error'] = array();
 				if ( ! wp_verify_nonce( $_POST[$this->tag.'_nonce'], $this->tag ) ) {
-   					$this->messages['error'][] = __( 'Sorry, the nonce field provided was invalid.' );
+   					$this->messages['error'][] = __( 'Sorry, the nonce field provided was invalid.', 'contact' );
 				}
-				$contact = $_POST['contact'];
+				$contact = array_merge( array(
+					'name' => null,
+					'email' => null,
+					'message' => null
+				), (array) $_POST['contact'] );
 				foreach ( $contact AS $key => $value ) {
 					switch ( $key ) {
 						case 'name':
 							$value = apply_filters( 'pre_comment_author_name', $value );
 							if ( strlen( $value ) < 1 ) {
-								$this->messages['error'][] = __( 'Please enter your name.' );
+								$this->messages['error'][] = __( 'Please enter your name.', 'contact' );
 							}
 						break;
 						case 'email':
 							$value = apply_filters( 'pre_comment_author_email', sanitize_email( $value ) );
 							if ( ! is_email( $value ) ) {
-								$this->messages['error'][] = __( 'Please enter a valid email address.' );
+								$this->messages['error'][] = __( 'Please enter a valid email address.', 'contact' );
 							}
 						break;
 						case 'message':
 							$value = trim( wp_kses( stripslashes( $value ), array() ) );
 							if ( strlen( $value ) < 1 ) {
-								$this->messages['error'][] = __( 'Please enter a message.' );
+								$this->messages['error'][] = __( 'Please enter a message.', 'contact' );
 							}
 						break;
 						default:
@@ -167,109 +169,100 @@ if ( ! class_exists( 'ContactDetails' ) )
 				if ( count( $this->messages['error'] ) == 0 ) {
 					if ( $this->is_blacklisted( $contact ) ) {
 						$this->messages['error'][] = __(
-							'Sorry, your comment failed the blacklist check and could not be sent.'
+							'Sorry, your comment failed the blacklist check and could not be sent.',
+							'contact'
 						);
-					} else if ( $this->is_spam( $contact ) ) {
+					} else if ( ( !array_key_exists( 'spamcheck', $atts ) || filter_var( $atts['spamcheck'], FILTER_VALIDATE_BOOLEAN ) ) && $this->is_spam( $contact ) ) {
 						$this->messages['error'][] = __(
-							'Sorry, your comment failed the spam check and could not be sent.'
+							'Sorry, your comment failed the spam check and could not be sent.',
+							'contact'
 						);
 					} else {
-						if ( $this->send_mail( $contact ) ) {
-							$this->messages['ok'] = __(
-								'Your message has been sent.'
-							);
+						if ( $this->send( $contact ) ) {
+							$this->messages['ok'] = __( 'Your message has been sent.', 'contact' );
 							unset( $contact );
 						} else {
-							$this->messages['error'][] = __(
-								'Sorry, we were unable to send your message.'
-							);
+							$this->messages['error'][] = __( 'Sorry, we were unable to send your message.', 'contact' );
 						}
 					}
 				}
 			}
-			if ( ( false !== $include ) && file_exists( TEMPLATEPATH.'/'.basename( $include ) ) ) {
-				include( TEMPLATEPATH.'/'.basename( $include ) );
+			if ( ( false !== $include ) && file_exists( TEMPLATEPATH . '/' . basename( $include ) ) ) {
+				include( TEMPLATEPATH . '/' . basename( $include ) );
 			} else {
 				include( 'form.php' );
 			}
-			$form = ob_get_contents(); ob_end_clean();
-			return $form;
+			return ob_get_clean();
 		}
-		
-		function is_blacklisted( $contact ) 
+		public function is_blacklisted( $contact )
 		{
 			return wp_blacklist_check(
-				$contact['name'],
 				$contact['email'],
-				( isset( $contact['website'] ) ? $contact['email'] : false ),
+				$contact['email'],
+				'',
 				$contact['message'],
 				preg_replace( '/[^0-9a-fA-F:., ]/', '', $_SERVER['REMOTE_ADDR'] ),
 				substr( $_SERVER['HTTP_USER_AGENT'], 0, 254 )
 			);
 		}
-		
-		function is_spam( $contact )
+		public function is_spam( $contact )
 		{
-			if ( function_exists( 'akismet_http_post' ) ) {
-				global $akismet_api_host, $akismet_api_port;
+			if ( method_exists( 'Akismet', 'http_post' ) ) {
 				$comment = array(
 					'comment_author' => $contact['name'],
 					'comment_author_email' => $contact['email'],
-					'comment_author_url' => $contact['email'],
-					'contact_form_subject' => '',
 					'comment_content' => $contact['message'],
+					'comment_type' => $this->tag,
 					'user_ip' => preg_replace( '/[^0-9., ]/', '', $_SERVER['REMOTE_ADDR'] ),
 					'user_agent' => $_SERVER['HTTP_USER_AGENT'],
 					'referrer' => $_SERVER['HTTP_REFERER'],
 					'blog' => get_option( 'home' ),
+					'blog_lang' => get_locale(),
+					'blog_charset' => get_option( 'blog_charset' )
 				);
 				foreach ( $_SERVER as $key => $value ) {
-					if ( ( $key != 'HTTP_COOKIE' ) && is_string( $value )) {
+					if ( ( $key != 'HTTP_COOKIE' ) && is_string( $value ) ) {
 						$comment[$key] = $value;
 					}
 				}
-				$query = '';
-				foreach ( $comment as $key => $value ) {
-					$query .= $key . '=' . urlencode( $value ) . '&';
-				}
-				$response = akismet_http_post(
-					$query,
-					$akismet_api_host,
-					'/1.1/comment-check',
-					$akismet_api_port
+				$response = Akismet::http_post(
+					Akismet::build_query( $comment ),
+					'comment-check'
 				);
-				if ( 'true' == trim($response[1]) ) {
+				if ( 'true' == trim( $response[1] ) ) {
 					return true;
 				}
 			}
 			return false;
 		}
-		
-		function send_mail( $contact )
+		public function send( $contact )
 		{
+			if ( !array_key_exists( 'subject', $contact ) ) {
+				$contact['subject'] = '[' . get_bloginfo('name') . '] ' . __( 'Contact form' );
+			}
+			$contact = apply_filters( $this->tag . '-send', $contact );
 			$headers = array(
-				'From: ' . get_bloginfo( 'name' ) . ' <' . $this->options['email'] . '>',
-				'Reply-To: ' . $contact['name'] . ' <' . $contact['email'] . '>',
+				'From: ' . get_bloginfo( 'name' ) . ' <' . sanitize_email( $contact['email'] ) . '>',
+				'Reply-To: ' . sanitize_text_field( $contact['name'] ) . ' <' . sanitize_email( $contact['email'] ) . '>',
 				'Content-Type: text/plain; charset="' . get_option( 'blog_charset' ) . '"'
 			);
 			$content = '';
 			foreach ( $contact AS $key => $value ) {
-				if ( ! in_array( $key, array( 'name', 'email', 'submit' ) ) && !empty( $value ) ) {
+				if ( ! in_array( $key, array( 'subject', 'name', 'email', 'submit' ) ) && !empty( $value ) ) {
 					if ( 'message' == $key ) {
-						$content .= $contact['name'] . ' ' . __('wrote') . ": \r\n\r\n" . $value;
+						$content .= sanitize_text_field( $contact['name'] ) . ' ' . __( 'wrote', 'contact' ) . ": \r\n\r\n" . $value;
 					} else {
-						$content .= __( ucwords( $key ) ) . ': ' . $value . "\r\n\r\n";
+						$content .= __( ucwords( esc_html( $key ) ) ) . ': ' . sanitize_text_field( $value ) . "\r\n\r\n";
 					}
 				}
 			}
 			return wp_mail(
 				$this->options['email'],
-				'[' . get_bloginfo('name') . '] ' . __('Contact form'),
+				sanitize_text_field( $contact['subject'] ),
 				$content,
 				implode( "\r\n", $headers )
 			);
 		}
-		
 	}
 	$contactDetails = new ContactDetails();
 	if ( isset( $contactDetails ) ) {

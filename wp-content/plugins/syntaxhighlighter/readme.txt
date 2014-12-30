@@ -3,7 +3,7 @@ Contributors: Viper007Bond, automattic
 Donate link: http://www.viper007bond.com/wordpress-plugins/syntaxhighlighter/donate/
 Tags: code, sourcecode, php, xhtml, html, css, WordPress.com
 Requires at least: 2.7
-Tested up to: 3.1
+Tested up to: 3.9
 Stable tag: trunk
 
 Easily post syntax-highlighted code to your site without having to modify the code at all. As seen on WordPress.com.
@@ -54,6 +54,41 @@ Make sure your theme's `footer.php` file has `<?php wp_footer(); ?>` somewhere i
 2. A part of the Settings page which controls the defaults.
 
 == ChangeLog ==
+
+= Version 3.1.10 =
+
+* New version of SyntaxHighlighter 3.x library to address XSS security issue. Props Ben Bidner for finding the bug and Alex Gorbatchev working with us (Automattic) to patch the issue.
+* Compatibility with moving the plugins folder to a location other than the default one.
+* Updated Japanese translation file thanks to Daisuke Takahashi.
+
+= Version 3.1.9 =
+
+* Reset box-shadow property for better theme support. Props Michael Fields.
+* Crush images for smaller filesizes.
+
+= Version 3.1.8 =
+
+* TinyMCE 4.x compatibility. Props azaozz.
+* Added German translation thanks to [Michael Berger](http://bitespresso.de/).
+
+= Version 3.1.7 =
+
+* XHTML validation fix by adding `type` attribute to `<style>` tag. Props [NoMad1337](http://www.tacticalcode.de/).
+
+= Version 3.1.6 =
+
+* Kill off v2 copy-to-clipboard SWF file due to XSS security issue with the file. If you want to be able to copy/paste, use the better v3.
+* Switch from using a `<meta>` tag to a `<style>` tag as the JavaScript anchor in the `<head>`. This should fix the validation error under HTML5.
+* Remove an old forced font-size function -- it wasn't actually used.
+* Remove references.
+
+= Version 3.1.5 =
+
+* The slashing changes made in WordPress 3.6 (alpha) have been reverted -- we're back to the old way again. This release restores the code back to Syntaxhighlighter v3.1.3. See [ticket #21767](http://core.trac.wordpress.org/ticket/21767).
+
+= Version 3.1.4 =
+
+* WordPress 3.6 (alpha) compatibility. Content is now being stripped of slashes before being run through filters so this plugin needs to stop trying to strip slashes and then adding them back. See [ticket #21767](http://core.trac.wordpress.org/ticket/21767).
 
 = Version 3.1.3 =
 
@@ -202,3 +237,8 @@ Localizations:
 = Version 1.0.0 =
 
 * Initial release!
+
+== Upgrade Notice ==
+
+= 3.1.10 =
+Important security update.

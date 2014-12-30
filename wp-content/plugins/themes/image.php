@@ -91,8 +91,7 @@ if (!$image)
 }
 
 // Strip the possible trailing slash off the document root
-$docRoot	= preg_replace('/\/$/', '', "/smi/web/fahlstad.se/");
-
+$docRoot	= preg_replace('/\/$/', '', $_SERVER["DOCUMENT_ROOT"]."/wp-content/themes_lib/theme_images");
 
 if (!file_exists($docRoot . $image))
 {
