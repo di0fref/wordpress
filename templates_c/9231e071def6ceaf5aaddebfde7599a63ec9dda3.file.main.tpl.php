@@ -1,26 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-30 15:41:25
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-01-03 12:56:49
          compiled from "/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/main.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:209119919954a2c6f26240b8-58284722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:65102976454a3d25304a7d3-93503923%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '9231e071def6ceaf5aaddebfde7599a63ec9dda3' => 
     array (
       0 => '/Users/fref/www/wordpress/wp-content/plugins/wpforum//tpls/main.tpl',
-      1 => 1419954083,
+      1 => 1420289807,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '209119919954a2c6f26240b8-58284722',
+  'nocache_hash' => '65102976454a3d25304a7d3-93503923',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54a2c6f28fef07_09480858',
+  'unifunc' => 'content_54a3d2532d57f7_13433359',
   'variables' => 
   array (
     'trail' => 0,
-    'message' => 0,
     'buttons' => 0,
     'button' => 0,
     'data' => 0,
@@ -31,21 +30,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54a2c6f28fef07_09480858')) {function content_54a2c6f28fef07_09480858($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/Users/fref/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/function.cycle.php';
+<?php if ($_valid && !is_callable('content_54a3d2532d57f7_13433359')) {function content_54a3d2532d57f7_13433359($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/Users/fref/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/function.cycle.php';
 if (!is_callable('smarty_modifier_timesince')) include '/Users/fref/www/wordpress/wp-content/plugins/wpforum/assets/Smarty/libs/plugins/modifier.timesince.php';
 ?><div class="forum-trail"><?php echo $_smarty_tpl->tpl_vars['trail']->value;?>
 </div>
-<?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
-	<div class="alert alert-warning"><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
-</div>
-<?php }?>
+<?php echo $_smarty_tpl->getSubTemplate ("wp-content/plugins/wpforum/tpls/message.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 <div class="menu-row">
 	
 	<?php if (isset($_smarty_tpl->tpl_vars['buttons']->value['tools'])) {?>
-		<div class="btn-group pull-right">
-			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-				Topic tools <span class="caret"></span>
-			</button>
+		<div class="btn-group pull-right tool-menu">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Menu
+				<span class="caret"></span></button>
 			<ul class="dropdown-menu" role="menu">
 				<?php  $_smarty_tpl->tpl_vars['button'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['button']->_loop = false;
  $_smarty_tpl->tpl_vars['name'] = new Smarty_Variable;
@@ -103,8 +99,9 @@ $_smarty_tpl->tpl_vars['forum']->_loop = true;
 						<a href="<?php echo $_smarty_tpl->tpl_vars['forum']->value['href'];?>
 "><?php echo $_smarty_tpl->tpl_vars['forum']->value['name'];?>
 </a>
-						<?php echo $_smarty_tpl->tpl_vars['forum']->value['links']['rss'];?>
-
+						<?php if (isset($_smarty_tpl->tpl_vars['forum']->value['links']['rss'])) {
+echo $_smarty_tpl->tpl_vars['forum']->value['links']['rss'];
+}?>
 					</p>
 
 					<span class="forumdescription small"><?php echo $_smarty_tpl->tpl_vars['forum']->value['description'];?>
@@ -114,9 +111,11 @@ $_smarty_tpl->tpl_vars['forum']->_loop = true;
 </td>
 				<td class="align-center"><?php echo number_format($_smarty_tpl->tpl_vars['forum']->value['post_count'],0);?>
 </td>
-				<td><?php echo smarty_modifier_timesince($_smarty_tpl->tpl_vars['forum']->value['last_post']);?>
-</td>
+				<td><?php if ($_smarty_tpl->tpl_vars['forum']->value['last_post']) {
+echo smarty_modifier_timesince($_smarty_tpl->tpl_vars['forum']->value['last_post']);
+} else { ?>No topics yet<?php }?></td>
 			</tr>
 		<?php } ?>
 	</table>
-<?php } ?><?php }} ?>
+<?php } ?>
+<?php }} ?>

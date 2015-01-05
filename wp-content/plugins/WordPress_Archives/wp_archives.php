@@ -111,12 +111,12 @@ function wp_archives_css(){ ?>
 		
 		$j(".arc_list li a").hover(
 			function(){
-				$j(this).find(".arc_comment").show();
+				//$j(this).find(".arc_comment").show();
 				//$j(this).find("span:last").show();
 			
 			}, 
 			function(){
-				$j(this).find(".arc_comment").hide();
+				//$j(this).find(".arc_comment").hide();
 			
 			}
 		);
