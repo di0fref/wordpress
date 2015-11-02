@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 's6411_wp');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 's6411');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'Tfqnm');
 
 /** MySQL hostname */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'sql.i8t.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'f&x-6WUnl9,?!&D`.fR4llY}^8r2a-w5EnV&YhBGwUHkN!ngYEiv!xwI`Xgje!T)');
-define('SECURE_AUTH_KEY',  'B-4&f:[cd0[W-z;)U?4u$6)zuhhx|I#X5-Lx.OrNtzRzC-I`Tg7rXSSDuK0]}jc>');
-define('LOGGED_IN_KEY',    'wO:IJj+oeT*i~/wSGI!|bR92)5g~E{(.iunO~+>|mb.;u{TftG-#Ad?c*xlEGh4r');
-define('NONCE_KEY',        '6FDiBYkf]mk:-DGi>{n`=]6xt/@`v-c*E4w7%aGeI`@]O/BMz:+73E[l*jm;~Gnn');
-define('AUTH_SALT',        ')KI@oKwN3u_dvG?mwV+[NqNIP^M|rx1[7$g^!##%`KtA0R-/,b5]tzKOu4%J#?=[');
-define('SECURE_AUTH_SALT', '[UH7fytY6Jb/7`OPY:3$%fKCb=FFsR}$^h@&&-I7t3!*0zhsv=,p*!&Bc?4o`z;~');
-define('LOGGED_IN_SALT',   'X4%+3sk^o+ioiR|Rl?3Mj*ms54VKN:vq+J+qP8FY}O|MSWxYYI*|t:g3y.?`8~/j');
-define('NONCE_SALT',       'f<K0o2Bx?Cq=B-n) T U4rOHlv%q-) X@gJ5%s;??14A|b~sh.}<WKW5vM6j;:w4');
+define('AUTH_KEY',         'f@+zP*n$hTUruV1+CN5(/mGD$U9&3U^:d|Tl]-^|tt1  X~Tc+QyD8X.lJL1j/l?');
+define('SECURE_AUTH_KEY',  '[/7 e#4+f|BdrM(UvcdI!t)|C_8v|7}hJ>N/JKb*g;M4Pac)?@I6).qG<.N%*>)-');
+define('LOGGED_IN_KEY',    'l#=nhc4xU,T|w?S#)r+)ozTzj9[DypaPw5KROD|gnbd2VOq4S<Noz]_R~+s&n]_O');
+define('NONCE_KEY',        'G16<G(N6]6|8)q&dm-KuP,2n2&;3W$wp. B/^aD h:5~dw5hCH#cl.(>nz&&L>CD');
+define('AUTH_SALT',        'y;XM1LS*yRyD@wlL&3`%7)R:AU@[2v*(qb#,gEy@)9~?=J+Kd}JvOR4~Z=OK#]|z');
+define('SECURE_AUTH_SALT', '-MvaqV|VW0qoK)kqMy%;N!AWz6.#p;5._KG-v5[~j/Lo+Q9+S#KJZqktEE/%0o:s');
+define('LOGGED_IN_SALT',   'F926z.ufcpPhjhWDnl)xt&]ZsM>#+f.PT)LC7?M30dO)ADFH590<PGQR3-{!*C|[');
+define('NONCE_SALT',       'OH?X}F[$.5|Jc)=@_.])C&;@!Pe:1I=u`#~-`/tqH3T=PhQBS)FG^9;h:O`:d(de');
 
 /**#@-*/
 
@@ -62,13 +62,23 @@ define('NONCE_SALT',       'f<K0o2Bx?Cq=B-n) T U4rOHlv%q-) X@gJ5%s;??14A|b~sh.}<
 $table_prefix  = 'wp_';
 
 /**
+ * WordPress Localized Language, defaults to English.
+ *
+ * Change this to localize WordPress. A corresponding MO file for the chosen
+ * language must be installed to wp-content/languages. For example, install
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
+ * language support.
+ */
+define('WPLANG', '');
+
+/**
  * For developers: WordPress debugging mode.
  *
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 

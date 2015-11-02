@@ -1,0 +1,1266 @@
+AWSTATS DATA FILE 6.9 (build 1.925)
+# If you remove this file, all statistics for date 201511 will be lost/reset.
+
+# Position (offset in bytes) in this file of beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1864                
+POS_TIME 2547                
+POS_VISITOR 20147               
+POS_DAY 35911               
+POS_DOMAIN 3388                
+POS_LOGIN 3621                
+POS_ROBOT 3776                
+POS_WORMS 3987                
+POS_EMAILSENDER 4118                
+POS_EMAILRECEIVER 4261                
+POS_SESSION 36029               
+POS_SIDER 36240               
+POS_FILETYPES 4396                
+POS_OS 4630                
+POS_BROWSER 4686                
+POS_SCREENSIZE 5074                
+POS_UNKNOWNREFERER 5148                
+POS_UNKNOWNREFERERBROWSER 8449                
+POS_ORIGIN 10182               
+POS_SEREFERRALS 10328               
+POS_PAGEREFS 10472               
+POS_SEARCHWORDS 11277               
+POS_KEYWORDS 11429               
+POS_MISC 2211                
+POS_ERRORS 11488               
+POS_CLUSTER 3477                
+POS_SIDER_404 11631               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20151102103359 311 54703 9199227284923
+FirstTime 20151101000259
+LastTime 20151102103359
+LastUpdate 20151102104151 311 43 194 0 74
+TotalVisits 578                 
+TotalUnique 381                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 393                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 1 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 46 60 1556700 39 39 131800
+1 49 108 3504969 42 43 228772
+2 132 163 4120230 64 65 272190
+3 251 252 5855871 89 91 568606
+4 56 77 2303333 34 34 73259
+5 382 401 2926668 174 174 7332646
+6 104 104 2304410 90 91 715598
+7 520 520 4933212 77 79 290138
+8 144 169 3655052 54 54 200780
+9 53 67 1436310 44 48 180750
+10 180 214 4936838 40 44 179035
+11 757 774 3818621 23 23 44979
+12 90 127 2551960 40 40 98588
+13 35 54 1175182 82 92 587602
+14 24 24 418736 25 25 54859
+15 96 97 513627 35 35 158788
+16 41 41 737242 49 50 73544
+17 18 21 573160 31 31 33075
+18 38 38 584112 22 25 107644
+19 31 44 1002240 41 42 285356
+20 26 26 381078 17 17 55246
+21 28 31 700251 39 39 130304
+22 50 85 1793054 35 36 281440
+23 33 40 560965 17 17 57126
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 5 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 3184 3537 52343821
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 2
+no_user_agent 318 8538079 20151102103259 0
+unknown 115 4025 20151102102559 115
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 10 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 10 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+css 161 4891807 0 0
+eot 7 320700 0 0
+png 14 58935 0 0
+woff 12 785424 0 0
+php 1897 9771785 0 0
+html 1264 28911218 0 0
+xml 3 3135 0 0
+js 168 7284870 0 0
+gif 10 28940 0 0
+svg 1 287007 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 2
+ 22
+Unknown 1210
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 25
+firefox3.0.2 21
+msie6.0 19
+ 154
+firefox5.0 1
+firefox15.0 2
+firefox40.0 14
+firefox3.6 12
+firefox29.0 5
+firefox34.0 143
+firefox38.0 6
+firefox7.0.1 12
+firefox3.6.23 1
+firefox31.0 1
+msie8.0 39
+firefox6.0.2 6
+firefox39.0 3
+firefox37.0 8
+msie7.0 12
+firefox5.0.1 1
+msie10.0 21
+firefox41.0 40
+msie9.0 710
+firefox36.0 2
+Unknown 255
+firefox35.0 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 53
+Mozilla/5.0_(compatible;_DuckDuckGo-Favicons-Bot/1.0;__http://duckduckgo.com) 20151101115359
+rogerbot/1.0_(http://www.moz.com/dp/rogerbot,_rogerbot-crawler@moz.com) 20151102092859
+Mozilla/5.0_(compatible;_Googlebot/2.1;__http://www.google.com/bot.html) 20151102103159
+Mozilla/5.0_(compatible;_SeznamBot/3.2;__http://fulltext.sblog.cz/) 20151102103359
+Feedly/1.0_(_http://www.feedly.com/fetcher.html;_like_FeedFetcher-Google) 20151102093459
+Mozilla/5.0_(Android_5.1.1;_Mobile;_rv:41.0)_Gecko/41.0_Firefox/41.0 20151101125359
+Mozilla/5.0_(compatible;_spbot/4.4.2;__http://OpenLinkProfiler.org/bot_) 20151101032159
+WordPress.com; 20151102084059
+Google_favicon 20151102092559
+Googlebot-Image/1.0 20151101223559
+Opera/9.80_(J2ME/MIDP;_Opera_Mini/8.0.35626/37.6897;_U;_sq)_Presto/2.12.423_Version/12.16 20151101103100
+Mozilla/5.0_(compatible;_bingbot/2.0;__http://www.bing.com/bingbot.htm) 20151102094500
+Sogou_web_spider/4.0(_http://www.sogou.com/docs/help/webmasters.htm#07) 20151102065359
+enlle_punto_com/Nutch-1.9 20151101185759
+Spiderbot/Nutch-1.7 20151101215559
+Mozilla/5.0_(compatible;_Yahoo!_Slurp;_http://help.yahoo.com/help/us/ysearch/slurp) 20151102080459
+Curl/PHP_5.3.29_(http://github.com/shuber/curl) 20151101010659
+Mozilla/5.0_(compatible;_Gluten_Free_Crawler/1.0;__http://glutenfreepleasure.com/) 20151101205959
+Typhoeus_-_https://github.com/typhoeus/typhoeus 20151101012359
+Go_1.1_package_http 20151102102659
+Riddler_(http://riddler.io/about) 20151102093259
+FeedBurner/1.0_(http://www.FeedBurner.com) 20151102074200
+Feedfetcher-Google;_(_http://www.google.com/feedfetcher.html;_1_subscribers;_feed-id=2354294581048665802) 20151102050100
+PHP/5.3.84 20151101130559
+Go-http-client/1.1 20151102084500
+()_{_foo;};echo;_/bin/bash_-c_ 20151101123759
+Java/1.6.0_04 20151101222259
+PHP/5.2.04 20151101103159
+Mozilla/5.0_(compatible;_inoreader.com-like_FeedFetcher-Google) 20151101035559
+Mozilla/5.0_(compatible;_linkdexbot/2.0;__http://www.linkdex.com/bots/) 20151101102159
+Mozilla/5.0_(compatible;_YandexBlogs/0.99;_robot;_B;__http://yandex.com/bots)0_readers 20151102045100
+PHP/5.2.26 20151102073859
+XML-RPC.NET 20151102061100
+PHP/5.3.38 20151102041759
+PHP/5.2.48 20151102043900
+Feedbin_feed-id:299206_-_1_subscribers 20151102094759
+PHP/5.2.07 20151101022559
+Mozilla/5.0_(compatible;_Baiduspider/2.0;__http://www.baidu.com/search/spider.html) 20151102103259
+PHP/5.{3|2}.{1|2|3|4|5|6|7|8|9|0}{1|2|3|4|5|6|7|8|9|0} 20151102044359
+WordPress/4.3.1;_http://www.fahlstad.se 20151102084759
+PHP/5.2.99 20151101220259
+binlar_2.6.3_test@mgmt.mic 20151101103459
+PHP/5.2.98 20151101220559
+Mozilla/5.0_(compatible;_Exabot/3.0;__http://www.exabot.com/go/robot) 20151101182059
+Mozilla/5.0_(compatible;_YandexBot/3.0;__http://yandex.com/bots) 20151102092000
+PHP/5.2.31 20151102044359
+gecko 20151102011259
+Mozilla/5.0_(compatible;_AhrefsBot/5.0;__http://ahrefs.com/robot/) 20151102013259
+PHP/5.3.53 20151101052400
+NewsGatorOnline/2.0_(http://www.newsgator.com;_9_subscribers) 20151101225059
+Mozilla/4.0_(compatible;_Windows;) 20151101212159
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~drewsmovies) 20151101153600
+Mozilla/5.0_(compatible;_MJ12bot/v1.4.5;_http://www.majestic12.co.uk/bot.php?_) 20151102034659
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 35
+rogerbot/1.0_(http://www.moz.com/dp/rogerbot,_rogerbot-crawler@moz.com) 20151102092859
+Feedly/1.0_(_http://www.feedly.com/fetcher.html;_like_FeedFetcher-Google) 20151102093459
+WordPress.com; 20151102084059
+Google_favicon 20151102092559
+Googlebot-Image/1.0 20151101223559
+Sogou_web_spider/4.0(_http://www.sogou.com/docs/help/webmasters.htm#07) 20151102065359
+Spiderbot/Nutch-1.7 20151101215559
+enlle_punto_com/Nutch-1.9 20151101185759
+Typhoeus_-_https://github.com/typhoeus/typhoeus 20151101012359
+Go_1.1_package_http 20151102102659
+Riddler_(http://riddler.io/about) 20151102093259
+FeedBurner/1.0_(http://www.FeedBurner.com) 20151102074200
+Feedfetcher-Google;_(_http://www.google.com/feedfetcher.html;_1_subscribers;_feed-id=2354294581048665802) 20151102050100
+PHP/5.3.84 20151101130559
+Go-http-client/1.1 20151102084500
+Java/1.6.0_04 20151101222259
+()_{_foo;};echo;_/bin/bash_-c_ 20151101123759
+magpie-crawler/1.1_(U;_Linux_amd64;_en-GB;__http://www.brandwatch.net) 20151102101259
+PHP/5.2.04 20151101103159
+PHP/5.2.26 20151102073859
+XML-RPC.NET 20151102061100
+Feedbin_feed-id:299206_-_1_subscribers 20151102094759
+PHP/5.2.48 20151102043900
+PHP/5.3.38 20151102041759
+PHP/5.2.07 20151101022559
+PHP/5.{3|2}.{1|2|3|4|5|6|7|8|9|0}{1|2|3|4|5|6|7|8|9|0} 20151102044359
+WordPress/4.3.1;_http://www.fahlstad.se 20151102084759
+PHP/5.2.99 20151101220259
+PHP/5.2.98 20151101220559
+binlar_2.6.3_test@mgmt.mic 20151101103459
+python-requests/2.7.0_CPython/3.4.2_Linux/3.13.0-66-generic 20151101025259
+PHP/5.2.31 20151102044359
+gecko 20151102011259
+PHP/5.3.53 20151101052400
+AppEngine-Google;_(_http://code.google.com/appengine;_appid:_s~drewsmovies) 20151101153600
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1664 1726
+From1 0 0
+From2 0 0
+From3 209 209
+From4 1311 1602
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 50 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 15
+http://fahlstad.se/wp-login.php 76 76
+http://fahlstad.se 66 66
+http://fahlstad.se/feed/ 50 50
+http://imknight.net 3 3
+http://torque-bhp.com/forums/ 2 2
+https://wordpress.org/support/topic/plugin-wp-forum-dont-install-this-version-get-22 2 2
+http://fahlstad.se/wp-forum/ 2 2
+http://rankings-analytics.com/try.php?u=http://fahlstad.se 1 1
+http://fahlstad.se/page/2/ 1 1
+http://fahlstad.se/wordpress/plugins/wp-forum/ 1 1
+http://justprofit.xyz 1 1
+http://torque-bhp.com/forums/?wpforumaction=search 1 1
+http://fahlstad.se/?attachment_id=1053 1 1
+http://startingablog.org 1 1
+http://blogandweb.com/wordpress/50-plugins-para-manejo-multimedia-en-wordpress/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+403 2 422
+302 57 0
+500 27 14445
+405 4 168
+404 200 3584986
+301 511 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 157
+/FCK/ 1 -
+/wordpress/plugins/fgallery/wp-admin/admin-ajax.php 9 -
+/includes/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+/vip/login.html 1 http://www.fahlstad.se
+/2008/09/wp-forum-178/feed/ 1 -
+/ckeditor/ckfinder/core/connector/php/connector.php 1 -
+/example.gitignore 1 http://fahlstad.se/example.gitignore
+/FCKeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/wordpress/themes/xmlrpc.php 1 -
+/2005/10/15/mac-os-x-tiger-on-x86/ 1 -
+/fckeditor/editor/filemanager/connectors/php/connector.php 1 -
+/fckeditor/editor/filemanager/upload/aspx/upload.aspx 1 -
+/download.php 1 -
+/sysadmin/fckeditor/editor/ 1 -
+/.gitattributes 1 http://fahlstad.se/.gitattributes
+/admin/FCKeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/web.config.txt 1 http://fahlstad.se/web.config.txt
+/register.php 2 http://www.fahlstad.se/
+/includes/fckeditor/ 1 -
+/admin/fckeditor/editor/filemanager/connectors/aspx/upload.aspx 1 -
+/wp-content/pics/themes/ftiny.jpg 1 -
+/2008/02/06/the-page-cannot-be-displayed/ 1 -
+/common/fckeditor/ 1 -
+/themes/bartik/color/preview.js 1 http://fahlstad.se/themes/bartik/color/preview.js
+/wp-indeks.php 1 -
+/2005/09/karlstad-offroad/feed/ 1 -
+/editorold/ 1 -
+/misc/ajax.js 1 http://fahlstad.se/misc/ajax.js
+/wp-content/pics/2006/08/Picture 1 -
+/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/wp-content/plugins/wp-forum/skins/exclusive/images/upshrink.gif 1 -
+/upload/FCKeditor/ 1 -
+/wp-content/plugins/fgallery/fim_photos.php 1 http://www.fahlstad.se/image-gallery-plugin-on-the-way/
+/https:/wordpress.org 2 -
+/cgi-bin/php 1 -
+/themes/README.txt 1 http://fahlstad.se/themes/README.txt
+/https:/wordpress.org/news/2015/08/wordpress-4-2-4-security-and-maintenance-release 1 -
+/README.txt 2 http://fahlstad.se/README.txt
+/MAINTAINERS 1 http://fahlstad.se/MAINTAINERS
+/administrator/components/com_login/login.xml 1 http://fahlstad.se/administrator/components/com_login/login.xml
+/fckimg/ 1 -
+/https:/www.linkedin.com/profile/view 1 -
+/wp-content/pics/2006/12/picture-2.png 1 -
+/includes/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/profiles/README.txt 1 http://fahlstad.se/profiles/README.txt
+/2005/11/04/should-i-release-this-theme/ 1 http://www.fahlstad.se/fvision-wordpress-theme-released/
+/components/com_mailto/views/sent/metadata.xml 1 http://fahlstad.se/components/com_mailto/views/sent/metadata.xml
+/https:/wordpress.org/news/2015/08/billie 1 -
+/2009/11/funny-quote-from-youtube/ 1 -
+/https:/wordpress.org/news/2015/09/wordpress-4-3-1 1 -
+/moblog 1 -
+/2006/12/12/wp-forum-version-173/ 1 http://www.hostingbookmarks.com/published/page/71/
+/MAINTAINERS.txt 1 http://fahlstad.se/MAINTAINERS.txt
+/wp-content/plugins/wp-forum/skins/exclusive/images/new_none.gif 1 -
+/2006/11/wp-cal-03/ 1 -
+/sites/all/README.txt 1 http://fahlstad.se/sites/all/README.txt
+/admin/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/2006/06/21/mac-applications-i-use/ 1 http://www.fahlstad.se/macbook-report-part-three/
+/2005/10/19/what-you-all-think-of-this/ 1 http://www.fahlstad.se/fmulti-theme-released/
+/wp-content/pics/stat.jpg 1 -
+/wp-content/plugins/wp-forum/feed.php 12 http://fahlstad.se/wp-content/plugins/wp-forum/feed.php?topic=all
+/about 3 -
+/dev/ 1 -
+/modules/user/user.info 1 http://fahlstad.se/modules/user/user.info
+/https:/wordpress.org/news/2015/10/wordpress-4-4-beta-1 1 -
+/2005/12/09/ftiny-wordpress-theme-released/ 1 -
+/2006/05/fahlstadse-widget/ 1 -
+/dev/&nbsp 1 -
+/sys-cgi 1 -
+/larkangens/ 1 -
+/includes/fckeditor/editor/filemanager/upload/asp/upload.asp 1 -
+/INSTALL.sqlite.txt 1 http://fahlstad.se/INSTALL.sqlite.txt
+/wp-content/uploads/2014/12/alexandria-150x124.png 1 -
+/wp-content/tutorials/ajax/ajax.html 1 http://www.fahlstad.se/ajax-tutorial/
+/sites/all/themes/README.txt 1 http://fahlstad.se/sites/all/themes/README.txt
+/wp-content/themes/strapboot/themify/themify-ajax.php 1 -
+/themes/garland/images/task-list.png 1 http://fahlstad.se/themes/garland/images/task-list.png
+/anatomy-of-a-wp-theme-a-tutorial/< 2 http://www.fahlstad.se/anatomy-of-a-wp-theme-a-tutorial/
+/scripts/fckeditor/editor/ 1 -
+/2006/12/wp-forum-version-174/ 2 http://www.fahlstad.se/2006/12/wp-forum-version-174/
+/2008/01/09/wooden-mirror/ 1 -
+/admin/FCKeditor/editor/filemanager/connectors/php/upload.php 1 -
+/page/2/trackback/ 1 http://fahlstad.se/page/2/
+/widgetize-your-wordpress-theme/< 2 -
+/inc/fckeditor/ 1 -
+/fckeditor/editor/filemanager/connectors/aspx/upload.aspx 1 -
+/admin/fckeditor/editor/filemanager/upload/aspx/upload.aspx 1 -
+/wp-content/plugins/revslider/temp/update_extract/revslider/joss.php 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/fckeditor/editor/filemanager/connectors/asp/connector.asp 1 -
+/2011/07/scaffold-new-wp-theme/ 1 -
+/photos/album/macbook/ 1 -
+/2005/10/31/new-wordpress-theme-fscreen/ 1 -
+/include/fckeditor/editor/ 1 -
+/2006/06/05/currently-working-on-a-new-theme-2/ 1 http://www.fahlstad.se/theme-release-delayed/
+/2006/08/sending-images-as-ecards-from-fgallery/feed/ 1 -
+/manage/fckeditor/ 1 -
+/wp-content/themes/ElegantEstate/thumb.php 1 -
+/includes/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx 1 -
+/COPYRIGHT.txt 1 http://fahlstad.se/COPYRIGHT.txt
+/wp-includes/routing.php 1 -
+/FCKeditor/editor/filemanager/upload/php/upload.php 1 -
+/apple-touch-icon.png 5 -
+/2005/11/wordpress-20-screenshots/ 1 -
+/admin/fckeditor/editor/filemanager/connectors/php/upload.php 1 -
+/common/fckeditor/editor/ 1 -
+/cgi-bin/php5 1 -
+/wp-content/plugins/revslider/temp/update_extract/revslider/info.php 1 -
+/cgi-bin/php4 1 -
+/wordpress/themes/fblue 1 http://www.fahlstad.se/fblue-fetaured-on-screenspire/
+/fckeditor/ 1 -
+/ckeditor/ckfinder/core/connector/asp/connector.asp 1 -
+/https:/wordpress.org/news/2015/07/wordpress-4-3-release-candidate 1 -
+/.editorconfig 1 http://fahlstad.se/.editorconfig
+/scripts/test.script 1 http://fahlstad.se/scripts/test.script
+/images/upload/fckediter/ 1 -
+/editor/fckeditor/ 1 -
+/2006/05/09/macbook-report-2/ 2 http://www.fahlstad.se/macbook-report-part-three/
+/https:/wordpress.org/news/2015/10/wordpress-4-4-beta-2 1 -
+/htaccess.txt 1 http://fahlstad.se/htaccess.txt
+/cgi-bin/php-cgi 1 -
+/account/submit/add-blog/index.htm 1 http://www.fahlstad.se/profile_blog_new.php
+/wp-content/themes/MyProduct/thumb.php 1 -
+/2011/07/working-on-a-twitter-plugin/ 1 -
+/cgi-bin-sdb/printenv 1 -
+/CHANGELOG.txt 1 http://fahlstad.se/CHANGELOG.txt
+/apple-touch-icon-precomposed.png 4 -
+/includes/fckeditor/editor/filemanager/connectors/aspx/connector.aspx 1 -
+/wp-content/pics/2006/08/minefield-icon.thumbnail.jpg 1 -
+/demo/ 1 -
+/INSTALL.mysql.txt 1 http://fahlstad.se/INSTALL.mysql.txt
+/2005/08/just-got-started/feed/ 1 -
+/wordpress/wp-admin/admin-ajax.php 1 -
+/manage/fckeditor/editor/ 1 -
+/includes/fckeditor/editor/filemanager/upload/php/upload.php 1 -
+/sysadmin/fckeditor/ 1 -
+/https:/twitter.com/fredrikfahlstad 1 -
+/includes/FCKeditor/editor/filemanager/upload/php/upload.php 1 -
+/demo 1 http://www.fahlstad.se/theme-demo-working/
+/2009/07/update-for-wp-2-8-1/ 1 -
+/2005/10/12/anatomy-of-a-wp-theme-a-tutorial/ 1 http://www.fahlstad.se/secrets-of-wordpress-plugins/
+/installation/language/en-GB/en-GB.ini 1 http://fahlstad.se/installation/language/en-GB/en-GB.ini
+/2006/05/09/macbook-report-1/ 1 http://www.fahlstad.se/macbook-report-part-three/
+/wp-content/pics/2006/06/icon_nnw.png 1 -
+/admin/fckeditor/editor/filemanager/connectors/asp/upload.asp 1 -
+/index.php 9 http://www.fahlstad.se/wordpress/plugins/wp-forum/
+/2006/11/15/sidenotes-with-commenting-a-tutorial/ 1 -
+/core/CHANGELOG.txt 1 http://fahlstad.se/core/CHANGELOG.txt
+/wp-plugins 1 http://www.fahlstad.se/services/
+/2006/01/09/currently-working-on-a-new-theme/ 1 http://www.fahlstad.se/wordpress-theme-fheaven-released/
+/2006/06/10/what-would-make-you-switch/ 1 -
+/wp-content/pics/dw.jpg 1 http://software-gal.blogspot.com/search/label/software
+/joomla.xml 1 http://fahlstad.se/joomla.xml
+/includes/FCKeditor/editor/filemanager/connectors/php/connector.php 1 -
+/FCKeditor/editor/filemanager/connectors/php/upload.php 1 -
+/wp-content/plugins/sniplets/modules/wpautop.php 1 -
+/admin/fckeditor/ 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 393
+185.87.121.69 721 721 2151200 20151101112759
+104.194.26.204 294 294 1079932 20151101054859
+104.194.26.205 294 294 1071183 20151102070659
+107.170.5.80 184 184 4215473 20151101032159
+51.254.121.186 153 153 3792634 20151101071300
+2a02:598:2::1036 132 132 2771849 20151102103359 20151102100459 /screenpire/
+94.22.47.242 103 103 2584068 20151102034659
+51.254.129.87 101 101 1809971 20151101084200
+193.201.224.186 68 68 305451 20151102071400
+91.200.12.53 58 58 29595 20151101161700
+123.125.71.15 1 1 27753 20151101114459
+180.76.15.18 2 2 81575 20151101225259
+64.110.132.20 1 1 3620 20151101131259
+113.200.28.18 1 1 27753 20151101061000
+107.170.62.43 5 5 390250 20151102060400
+204.188.202.228 1 1 0 20151101082200
+94.228.34.203 8 8 334148 20151102083059
+38.68.25.180 1 1 0 20151101122159
+180.76.15.12 1 1 20559 20151102045400
+117.169.1.119 5 5 89456 20151102050900
+66.249.91.9 1 1 78050 20151101164000
+66.102.8.230 0 5 99815 
+23.97.129.102 1 1 27753 20151101154200
+193.201.224.32 3 3 78209 20151101170500
+5.164.85.236 2 2 20034 20151102005259
+162.247.72.7 3 3 47787 20151102052200
+79.105.236.84 2 2 20034 20151102054600
+212.129.60.21 1 1 17261 20151101143800
+61.160.212.57 2 2 31282 20151101111659
+180.76.15.154 1 1 24347 20151101011159
+67.183.191.4 1 1 31891 20151102081159
+74.125.182.179 1 1 78050 20151102074200
+109.232.144.197 1 1 27753 20151101115100
+212.7.194.28 2 2 55506 20151101180700
+54.151.62.223 1 1 0 20151102055900
+10.0.2.52 1 1 0 20151102084759
+209.126.117.15 1 1 27753 20151102071959
+23.22.118.9 1 1 17500 20151101102159
+66.249.83.177 1 1 18169 20151102092559
+220.181.108.86 1 1 27753 20151101114259
+39.173.139.170 4 4 61693 20151101195700
+36.48.69.177 2 2 31288 20151101212400
+54.219.200.60 1 1 0 20151101163100
+220.181.108.121 1 1 27753 20151101094459
+78.17.40.121 4 21 702056 20151101135659
+14.207.0.247 3 3 33939 20151101040159
+45.34.155.165 1 3 150568 20151101173059
+123.125.71.106 1 1 24873 20151101124859
+91.194.84.106 21 21 507976 20151101070000
+104.131.195.214 4 4 312200 20151102074359
+66.102.8.220 0 4 358353 
+95.28.171.228 4 15 462765 20151101081600
+185.22.16.74 1 15 582916 20151101002059
+91.200.12.143 3 3 38249 20151101032558
+89.169.36.186 1 1 2657 20151102014659
+204.188.203.212 1 1 0 20151101062200
+66.249.65.115 12 14 78050 20151101145500
+180.183.58.122 1 1 27753 20151102003659
+208.80.194.122 1 1 24363 20151102085559
+78.164.11.220 13 13 38528 20151101152800
+54.176.118.255 1 1 0 20151101003559
+94.228.34.249 7 7 0 20151102101259 20151102101259 /wp-plugins/wp-forum/feed/
+124.200.223.33 3 3 33953 20151102032159
+91.200.12.148 4 4 60820 20151101094900
+66.249.65.112 7 7 83537 20151101144500
+2001:1284:f000:59af:16da:e9ff:fedd:14 3 3 34237 20151102022059
+117.169.1.180 3 3 59037 20151102042059
+188.163.110.54 4 4 13463 20151102025159
+37.140.141.37 2 2 25466 20151101104459
+148.251.180.152 11 11 27641 20151101223459
+182.118.22.141 1 1 20509 20151101003559
+62.210.113.143 1 1 27753 20151101123759
+186.95.101.56 3 3 48523 20151102024159
+212.252.118.143 3 16 647105 20151101100059
+66.249.65.109 4 5 27753 20151101131859
+45.63.106.224 1 1 1 20151101155100
+2400:8901::f03c:91ff:fe37:c63f 3 3 0 20151102052700
+87.253.132.203 4 4 156100 20151102015559
+54.219.19.173 1 1 0 20151101201059
+117.169.6.97 1 1 2657 20151102013559
+68.169.39.153 1 1 0 20151101005059
+77.41.170.86 1 1 27753 20151102064059
+54.177.32.39 1 1 0 20151101073559
+87.253.130.17 12 12 345117 20151102054459
+31.184.238.51 4 4 72867 20151101151200
+176.56.224.235 1 1 1 20151101084859
+2001:41d0:a:574e:: 3 3 33941 20151101183259
+23.236.210.12 1 1 2657 20151102013559
+213.14.94.18 3 3 8912 20151101063859
+180.76.15.148 1 1 19805 20151101003059
+180.244.105.65 1 1 2657 20151102023059
+117.169.6.178 1 1 2657 20151102030259
+220.233.187.49 1 1 27631 20151102092059
+23.236.191.148 1 1 2657 20151101054800
+157.55.39.239 1 1 17276 20151101131259
+185.85.75.56 1 1 0 20151101025959
+141.8.142.1 1 1 755 20151101095059
+87.253.130.16 5 5 156100 20151101200400
+174.139.28.114 4 4 56844 20151102092459
+103.245.44.14 4 4 104478 20151101103459
+117.169.6.134 1 1 17235 20151102011359
+175.44.4.208 3 3 78465 20151101183159
+54.207.90.163 3 3 33954 20151101152200
+109.194.228.204 2 2 20034 20151101120059
+157.55.39.166 1 1 17736 20151102094500 20151102094500 /leoard-screenshots-tuaw/
+94.41.112.121 2 2 20034 20151101215459
+198.27.66.194 1 1 25155 20151101120459
+207.46.13.45 1 1 17275 20151101030458
+204.188.236.166 1 1 0 20151101162300
+89.32.177.16 3 3 30922 20151102041759
+168.61.42.209 4 4 312200 20151102011259
+117.169.6.88 2 2 55506 20151102013559
+69.4.83.18 1 1 3620 20151101143700
+2001:3e0:3000:209:2:1:0:1b 1 1 27753 20151101022859
+112.202.40.197 1 1 2799 20151101160200
+66.249.85.237 1 1 27753 20151101180000
+180.76.15.27 1 1 21072 20151101153100
+40.77.167.51 0 4 128722 
+72.5.65.214 2 22 914129 20151101010259
+155.94.251.81 2 2 30288 20151101022159
+54.151.38.240 2 2 0 20151102054200
+117.68.159.180 1 1 27753 20151101043359
+27.159.194.90 2 2 20034 20151101110359
+104.131.147.112 1 1 27753 20151101205959
+23.23.26.29 6 6 174608 20151101025259
+91.200.12.141 1 1 2799 20151101032459
+188.210.215.207 3 3 25994 20151101220559
+180.76.15.142 1 1 17500 20151101073500
+111.75.252.33 3 3 8853 20151101021859
+218.91.171.233 1 1 17235 20151102055000
+68.169.38.86 1 1 0 20151101132159
+91.200.12.95 2 2 17494 20151102003159
+180.76.15.19 1 1 32713 20151102001359
+23.250.11.10 1 1 3620 20151101014259
+66.249.65.88 1 1 0 20151101035759
+103.9.126.18 3 3 33950 20151102064900
+91.200.12.106 4 4 55484 20151101063500
+74.125.113.180 1 1 78050 20151101114059
+183.224.77.75 3 3 33939 20151101185259
+180.76.15.16 1 1 20846 20151101084259
+64.110.132.120 1 1 3620 20151101035159
+162.243.199.26 8 8 624400 20151102053900
+45.32.241.245 2 2 55506 20151101211159
+23.95.238.247 1 1 2799 20151101143800
+185.60.230.12 6 6 54478 20151101220259
+178.255.215.94 1 1 27753 20151101182059
+117.169.6.128 3 3 83259 20151102011359
+122.72.0.242 3 3 33949 20151101165159
+38.68.25.192 1 1 0 20151101232259
+36.99.31.178 1 1 27753 20151102060959
+38.68.25.204 1 1 0 20151102092359
+157.55.39.196 13 13 216857 20151101181600
+71.42.151.123 5 5 0 20151102095159 20151102095159 /feed/
+104.131.199.242 1 1 78050 20151101081759
+104.131.197.228 5 5 390250 20151102051400
+2a02:750:a2:a2::2:66 2 2 0 20151101212359
+94.41.49.55 2 2 20034 20151101072359
+180.76.15.13 1 1 16816 20151101112559
+88.130.121.117 18 39 775503 20151101125359
+82.145.217.202 1 15 665946 20151101103100
+95.173.244.10 14 14 41512 20151102094500 20151102094459 /wp-login.php
+37.130.229.149 4 20 831356 20151101113259
+54.197.160.162 1 1 0 20151101011759
+193.227.49.83 1 1 27753 20151102043159
+123.125.71.89 1 1 27753 20151102040059
+5.9.60.46 1 2 3760 20151102093259
+2001:41d0:2:5cc9:: 1 1 27753 20151102005559
+178.237.14.128 1 1 1 20151101095559
+64.110.133.88 4 4 10912 20151101155100
+103.23.22.244 1 1 1 20151101102259
+174.136.12.131 1 1 27753 20151101010659
+69.30.231.50 1 1 3531 20151101194559
+162.244.14.26 1 1 27753 20151101143700
+69.30.231.53 2 2 30410 20151101194559
+94.228.34.251 1 1 0 20151101002559
+183.111.169.201 5 5 167714 20151101022659
+192.0.84.34 1 1 78050 20151102084059
+37.140.141.32 1 1 19439 20151102051900
+95.79.185.8 1 1 9411 20151101182500
+204.188.241.90 1 1 0 20151102062359
+36.99.31.7 1 1 27753 20151101015559
+195.154.227.118 1 1 0 20151101175700
+180.76.15.136 1 1 19147 20151101181859
+180.76.15.139 1 1 23581 20151102074759
+216.158.199.18 1 1 27753 20151102081659
+185.28.193.95 1 1 27753 20151101034459
+139.210.188.211 3 3 33953 20151101121159
+180.76.15.8 1 1 22971 20151101105859
+199.83.93.250 1 1 24820 20151101144000
+220.181.108.163 1 1 17235 20151101094959
+54.160.9.44 3 3 61938 20151101102100
+23.95.198.141 1 1 27753 20151102050400
+192.171.235.211 1 1 2657 20151102014559
+162.243.69.172 1 1 78050 20151102035859
+39.171.114.116 2 2 30696 20151101112259
+195.186.81.92 3 3 83259 20151101130359
+220.181.108.82 1 1 17235 20151101102259
+117.169.6.177 3 3 83259 20151102071600
+5.150.139.139 1 1 1 20151101081759
+157.55.39.225 6 6 81337 20151102010259
+192.99.244.139 1 1 2799 20151101121259
+87.253.132.202 7 7 234150 20151101211259
+180.76.15.161 2 2 40422 20151101233259
+220.143.70.111 1 1 2657 20151102055000
+88.188.39.22 3 3 61527 20151102074659
+213.163.71.174 1 2 25560 20151101070059
+207.46.13.18 1 1 17272 20151101105459
+180.76.15.25 1 1 21474 20151101000859
+178.175.184.247 3 3 30922 20151101022559
+69.30.231.51 1 1 27753 20151101194559
+208.80.194.30 2 2 42274 20151102074459
+142.4.212.142 1 1 17235 20151102072900
+202.70.45.6 3 3 33954 20151102061500
+188.208.0.123 3 3 25994 20151101130559
+107.178.194.76 1 2 41235 20151101142959
+5.9.67.106 1 1 27753 20151101185759
+220.181.108.99 1 1 27753 20151101084359
+180.76.15.162 1 1 21304 20151101024959
+101.226.166.250 1 1 22825 20151101002459
+23.92.84.200 1 1 3620 20151102100459 20151102100459 /wp-login.php
+183.247.215.231 2 2 6481 20151102065259
+117.169.6.70 2 2 7070 20151102071659
+220.181.108.140 1 1 27753 20151101235059
+197.159.142.97 1 1 27753 20151101213059
+113.65.135.30 3 3 9553 20151102061100
+107.170.61.36 2 2 156100 20151102094759 20151102094759 /feed/
+86.123.246.48 19 19 323743 20151101190259
+94.73.159.122 12 12 437965 20151102063959
+66.249.69.28 1 1 0 20151101215059
+178.175.184.242 1 1 2799 20151101001459
+195.154.169.85 2 2 39760 20151101195459
+185.96.192.118 1 1 27753 20151102074259
+180.76.15.151 2 2 47950 20151101222459
+157.55.39.33 1 1 17275 20151101153000
+176.10.104.240 1 1 2925 20151101201659
+54.159.250.31 1 1 27753 20151101223859
+188.226.172.109 3 3 59038 20151101141259
+66.249.78.212 10 12 145679 20151102103159 20151102103159 /feed/atom/
+79.105.248.201 2 2 20034 20151101103859
+89.217.151.214 1 1 17999 20151101092559
+193.201.224.74 1 1 18775 20151101163459
+66.249.78.198 19 25 261737 20151102100259 20151102100259 /feed/
+194.208.11.107 5 5 5 20151102063259
+195.74.38.101 1 8 518273 20151102043659
+180.76.15.149 2 2 46138 20151101231959
+73.37.52.84 1 1 17301 20151101194059
+95.17.32.10 11 17 138476 20151101232259
+66.102.8.225 1 7 83056 20151101010659
+66.249.81.228 1 1 27753 20151101123959
+208.80.194.27 2 2 55384 20151102094359 20151102094359 /index.php
+46.151.52.64 2 2 65302 20151102092359
+182.118.54.150 0 1 7200 
+157.55.39.197 1 1 27753 20151101152800
+117.169.6.71 2 2 6484 20151102030259
+101.226.33.179 1 1 0 20151101120459
+180.76.15.137 1 2 22227 20151102054900
+68.180.228.53 42 42 795302 20151102080459
+91.200.12.73 2 2 21908 20151101154000
+62.210.215.118 4 4 81610 20151101232759
+64.110.133.97 1 1 3620 20151102040059
+190.189.79.14 1 1 24774 20151102034359
+157.55.39.110 2 2 17736 20151101181800
+95.108.233.69 1 1 0 20151101051100
+193.201.227.152 21 21 75558 20151102053000
+89.123.22.232 1 1 27753 20151101222259
+182.242.227.183 1 1 27631 20151101191059
+180.76.15.34 1 1 28059 20151102103259 20151102103259 /boxnet-free-online-storage/
+167.114.0.27 11 28 686723 20151101220959
+207.46.13.77 4 4 76602 20151101184059
+117.169.1.70 4 4 37484 20151101184959
+95.108.147.186 1 1 0 20151102045100
+134.213.212.5 9 9 26592 20151102055859
+92.64.153.209 2 2 34470 20151102100300 20151102100259 /wp-forum/
+89.248.171.132 1 1 2925 20151102044900
+180.76.15.146 1 1 17681 20151102063359
+117.169.6.57 2 2 7055 20151102011359
+2602:ffea:1001:162::cb84 2 2 31288 20151101190959
+87.253.130.14 14 14 423167 20151102084500
+91.200.12.137 1 1 32651 20151101033159
+204.188.203.210 1 1 0 20151101052200
+180.153.73.60 1 1 0 20151101212159
+204.188.241.252 1 1 0 20151102072359
+180.76.15.9 1 1 18169 20151102012359
+66.249.84.188 2 2 44988 20151102062759
+104.167.102.244 1 1 32651 20151101165500
+177.42.185.84 1 17 738640 20151101120259
+67.188.8.141 3 9 209395 20151101023559
+117.169.6.9 1 1 3532 20151102013559
+65.19.138.33 22 22 156100 20151102090500
+188.166.249.55 3 3 33940 20151101164000
+27.156.72.98 3 3 30922 20151101052400
+117.169.6.49 2 2 6474 20151101202459
+175.44.4.49 1 1 25418 20151101014859
+183.207.232.119 3 3 72119 20151101135859
+182.118.44.216 2 14 727287 20151101043159
+89.33.40.196 7 7 98807 20151102073859
+182.118.22.206 1 1 18065 20151101002859
+101.226.169.207 1 1 25418 20151101003259
+66.249.83.174 1 1 18169 20151101101659
+40.77.167.48 0 1 113498 
+40.77.167.97 0 2 22926 
+180.76.15.26 2 2 45888 20151101033359
+62.218.136.30 3 3 34234 20151101005959
+76.12.101.212 2 2 31283 20151101220159
+189.112.187.17 1 13 483266 20151102023058
+106.38.241.153 2 2 50784 20151102065359
+112.111.161.74 5 5 105328 20151102022259
+91.121.78.42 2 2 43417 20151101215559
+204.195.139.6 2 2 35308 20151102041559
+130.185.139.213 0 1 30163 
+107.170.63.50 3 3 234150 20151102030859
+104.236.174.205 1 1 0 20151101170859
+123.125.71.71 1 1 27753 20151101223859
+174.127.123.216 1 1 0 20151101142159
+107.23.49.117 1 1 27753 20151101115359
+37.140.141.25 2 2 59850 20151102092000
+92.222.201.143 1 1 27753 20151101205000
+188.165.15.87 7 7 114389 20151102013259
+220.181.108.87 1 1 17235 20151102005959
+23.92.84.204 4 4 12554 20151102030359
+2a03:b0c0:1:d0::1:9001 2 2 31288 20151101211159
+182.118.60.186 0 1 15930 
+174.127.123.219 1 1 0 20151101192259
+180.76.15.150 1 1 40214 20151102052200
+94.228.34.211 4 4 0 20151102050300
+207.46.13.69 3 3 35010 20151101103559
+66.249.91.17 2 2 156100 20151102050100
+199.187.122.91 3 3 14602 20151101205659
+91.179.112.199 2 2 34470 20151101114559
+180.76.15.158 1 1 37322 20151101072159
+38.68.25.197 1 1 0 20151101202259
+122.102.32.126 1 1 2657 20151101040059
+66.249.91.25 2 2 156100 20151102015259
+68.169.39.7 1 1 0 20151102032259
+182.118.69.18 0 8 531280 
+46.39.55.65 2 2 20034 20151101110459
+180.76.15.31 1 1 17880 20151101184559
+198.204.249.34 1 1 27753 20151101224159
+216.158.202.105 1 1 2657 20151101204959
+46.118.155.216 3 3 27755 20151102020659
+66.249.90.57 2 2 156100 20151101034959
+208.80.194.126 1 1 24925 20151102090059
+180.76.15.134 2 2 38799 20151102033659
+80.241.219.59 3 16 420196 20151101193759
+65.52.0.135 1 1 78050 20151101225059
+64.110.132.34 6 6 18152 20151102074759
+209.133.111.211 6 6 468300 20151102092859
+157.55.39.14 2 2 34550 20151101122159
+178.0.41.227 1 1 22825 20151101184300
+92.247.181.31 1 1 78050 20151101035559
+38.68.25.35 1 1 0 20151101172259
+180.76.15.21 1 1 17838 20151101040559
+31.184.238.249 1 1 17235 20151101210959
+104.131.200.249 2 2 156100 20151101084259
+157.55.39.32 5 5 86373 20151101143559
+2607:fb90:1804:531e:a5e9:2297:f4cf:c7db 2 15 381246 20151101104900
+91.200.12.99 2 2 20034 20151102100159 20151102094659 /wp-login.php
+157.55.39.50 1 1 17275 20151101112059
+208.80.194.29 1 1 24933 20151102091659
+124.193.4.184 4 4 86799 20151101115759
+91.108.180.146 1 1 2799 20151101074859
+186.92.3.215 5 5 65233 20151101000759
+54.87.124.222 1 1 0 20151101012359
+103.49.201.222 7 21 639675 20151102085700
+5.158.237.78 1 1 17235 20151101221059
+77.81.95.149 3 3 25994 20151102043900
+46.166.173.65 4 4 60840 20151102081600
+46.151.52.33 1 1 32651 20151101111859
+40.77.167.49 0 1 239564 
+115.182.83.38 4 4 61704 20151102015459
+104.247.217.134 2 2 28422 20151101182259
+182.118.70.248 0 1 95977 
+86.209.185.233 2 21 688595 20151101052300
+46.29.249.74 1 1 17235 20151101091459
+162.208.49.45 9 9 253912 20151101122959
+37.140.188.97 1 1 27753 20151101214659
+54.146.157.105 1 1 27753 20151101231659
+5.158.237.244 2 2 20034 20151101133059
+87.253.130.15 8 8 312200 20151102102659 20151102102659 /feed/
+176.97.116.141 1 1 20509 20151102035059
+88.67.245.197 4 17 447949 20151101224259
+78.23.240.152 3 3 122726 20151102045300
+192.161.171.57 3 3 30800 20151102044359
+2001:3e0:3000:108:2:1:0:16 1 1 27753 20151101082159
+180.76.15.14 1 1 21362 20151101213059
+212.7.220.21 1 1 27753 20151101122959
+176.97.116.171 1 1 27753 20151102055800
+65.19.138.34 28 28 161587 20151102093459 20151102083459 /feed/
+62.212.73.211 3 3 83305 20151102012259
+191.40.94.253 37 37 110144 20151101123759
+131.253.25.255 0 2 5643 
+66.249.78.205 6 7 18676 20151102051400
+93.159.230.88 1 25 1015185 20151101010959
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20151101 2280 2576 37913615 402
+20151102 904 961 14430206 176
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 17
+5mn-15mn 17
+2mn-5mn 3
+30s-2mn 27
+15mn-30mn 8
+0s-30s 467
+30mn-1h 24
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 50 first Pages must be first (order not required for others)
+BEGIN_SIDER 347
+/wp-login.php 1604 5190155 66 106
+/feed/ 200 6856184 134 132
+/index.php 166 4453969 114 77
+/wp-forum/ 146 2810129 54 50
+/page/26/ 105 1863623 1 1
+/page/12/ 71 1773718 0 0
+/page/11/ 57 1417574 1 0
+/page/13/ 47 1133852 1 1
+/feed/atom/ 33 584759 23 20
+/page/19/ 32 771721 0 0
+/page/18/ 26 643391 0 0
+/wp-admin/admin-ajax.php 22 22 7 8
+/wp-login.php/ 21 75558 1 1
+/category/wordpress/feed/ 20 17334 13 13
+/page/2/ 18 458084 3 4
+/xmlrpc.php 17 31475 2 13
+/wp-content/plugins/themes/download.php 14 6440 1 4
+/wordpress/themes/ 14 228250 10 6
+/wp-content/plugins/themes/image.php 13 87882 1 2
+/wordpress/plugins/fgallery/ 12 331572 10 4
+/contact/ 10 161991 5 3
+/wp-content/themes/strapboot/font-awesome/fonts/fontawesome-webfont.eot 3 168018 0 2
+/wp-includes/compat.php 1 0 0 0
+/the-25-greatest-pcs-of-all-time/ 2 35554 0 0
+/fmoblog-my-first-wordpress-plugin/ 1 18510 0 0
+/page/14/ 1 24726 0 1
+/wp-includes/class-wp-theme.php 1 0 0 0
+/wp-includes/functions.wp-scripts.php 1 0 0 0
+/macbook-pro-noise-and-heat/ 2 42948 1 1
+/services/ 5 87500 3 4
+/wordpress-20-screenshots/ 1 17680 0 0
+/wp-includes/class-wp-embed.php 1 154 0 0
+/f3green-ie-bug-fixed/ 1 22982 0 0
+/mactel-would-you-buy/ 2 52630 0 0
+/wordpress/plugins/wp-cal/ 5 96255 3 1
+/merry-christmas/ 1 21239 0 0
+/wp-forum-20-released/ 2 87370 1 1
+/two-fingers-on-the-trackpad-right-click-for-macbook-pro-15/ 1 18079 0 0
+/wp-includes/pluggable.php 1 0 0 0
+/theme-release-delayed/ 2 47162 1 1
+/wp-includes/ms-default-constants.php 1 0 0 0
+/forange-theme/ 1 19640 0 0
+/category/webdesign/page/2/ 1 24867 1 1
+/wp-includes/admin-bar.php 1 0 0 0
+/sidenotes-with-commenting-a-tutorial/ 1 31891 1 1
+/ipod-nano-1-gb/ 1 20057 0 0
+/mac-applications-i-use/ 2 49636 1 0
+/wp-forum-2-4-released/feed/ 1 7196 0 0
+/adsense-trouble-solved/ 1 19271 0 0
+/macbook-report-1/ 2 39568 0 0
+/excel-as-a-database/ 2 35298 0 0
+/wordpress/plugins/feed/ 1 2965 0 0
+/2006/07/ 1 23425 0 0
+/addicted-to-word-of-warcraft/ 1 144284 1 1
+/wp-forum-plugin-released/ 2 50756 0 0
+/wp-includes/link-template.php 1 0 0 0
+/top-ten-wp-plugins/ 2 35362 1 1
+/wp-plugins/wp-forum/feed/ 7 0 7 6
+/2008/12/ 1 16725 0 0
+/funny-quote-from-youtube/ 1 23840 0 0
+/contribution/ 1 22088 0 0
+/wp-includes/registration-functions.php 1 167 0 0
+/fgallery-now-with-lightbox-support/ 3 53859 1 1
+/just-got-started/ 1 20644 0 0
+/2006/08/ 1 24200 0 0
+/wp-includes/general-template.php 1 0 0 0
+/2006/04/ 1 24006 0 0
+/wp-forum-updated/ 1 34663 0 0
+/flock-web-browser/ 3 59358 1 1
+/wp-includes/wp-diff.php 1 0 0 0
+/update-for-wp-2-8-1/ 2 43278 0 0
+/trying-ecto/ 2 45164 0 0
+/page/24/ 9 218379 1 1
+/dual-boot-mac-osx86-and-win-xp/ 2 181304 1 1
+/got-hacked/ 1 24873 1 1
+/wp-includes/class.wp-styles.php 1 149 0 0
+/fnice-theme/ 2 43196 1 1
+/fmulti-theme-released/ 1 27545 0 0
+/2005/10/ 2 48694 1 1
+/category/thoughts/ 2 42144 2 2
+/wordpress-theme-fheaven-released/ 2 80428 1 1
+/author/admin/ 5 124100 5 1
+/new-theme/ 2 45684 0 0
+/6-kg-of-pike/ 2 46062 1 1
+/macbook-pro-with-win-xp-pre-installed/ 1 17909 0 0
+/wp-forum-stolen-by-vasthtml/ 1 37654 1 0
+/contact/feed/ 2 9674 0 0
+/excellent-business-theme-by-themeally/ 3 56325 1 1
+/wp-forum-151-released/ 1 25313 0 0
+/fgallery-updated-to-version-233/ 1 28758 0 0
+/wp-includes/default-widgets.php 1 143 0 0
+/wp-includes/feed.php 1 0 0 0
+/wp-includes/query.php 1 0 0 0
+/photoshop-cs3-just-months-away/ 3 63099 1 0
+/why-cant-i-get-wp-itunes-to-work/ 2 38902 0 0
+/wp-content/plugins/wpforum/assets/bootstrap-3.3.1/fonts/glyphicons-halflings-regular.eot 1 20335 1 0
+/firefox-20-alpha-is-here/feed/ 1 774 1 1
+/fblue-fetaured-on-screenspire/ 3 62538 2 2
+/wp-includes/meta.php 1 0 0 0
+/wp-strapboot-wordpress-theme/feed/ 1 784 0 0
+/leoard-screenshots-tuaw/ 1 17736 1 0
+/comments/feed/ 9 73000 6 3
+/2005/09/ 1 23852 0 0
+/fspring-theme-updated-with-wordpresscom-widget-support/ 2 84500 0 0
+/suggestion-for-fmoblog-21/ 1 19315 0 0
+/add-free-opera/ 1 17581 0 0
+/wp-forum/feed/ 6 13446 4 5
+/wp-content/plugins/wpforum/assets/font-awesome/fonts/fontawesome-webfont.eot 2 112012 0 0
+/ftiny-wordpress-theme-released/ 1 33696 0 0
+/wp-includes/class-wp-admin-bar.php 1 0 0 0
+/wordpress/plugins/fquick/feed/ 1 8094 1 0
+/category/poker/ 1 17838 1 1
+/wp-includes/ms-settings.php 1 0 0 0
+/i-just-got-myself-a-new-laptop/ 2 44234 0 0
+/safari-30-features/ 1 17676 0 0
+/wp-includes/user.php 1 0 0 0
+/17-macbook-pro/ 1 17605 1 0
+/category/fun/ 1 20859 0 0
+/fgreen-released/ 2 107118 0 0
+/wp-forum-version-14/ 2 53748 1 1
+/sending-images-as-ecards-from-fgallery/ 1 33502 0 0
+/2005/11/ 1 23905 0 0
+/the-new-ipod-nano/ 1 23800 0 0
+/fgallery-241/ 2 58842 0 0
+/wp-forum-vers-177-with-captcha/ 1 29440 0 0
+/firefox-15-released/ 1 17636 0 0
+/archives/feed/ 1 714 1 0
+/mac-os-x-tiger-on-x86/ 1 68924 0 0
+/wp-includes/cron.php 1 0 0 0
+/custom-wordpress-loop/ 2 44412 0 0
+/wordpress-theme-flight-released/ 1 23034 0 0
+/wp-includes/theme.php 1 0 0 0
+/judging-in-crestock-photoshop-contest-2006/ 2 41394 0 1
+/ipod-nano-first-impression/ 3 59319 0 0
+/add-free-opera/feed/ 1 0 0 0
+/most-funny-macbook-pro-review/ 2 38294 1 1
+/css-a-tutorial/ 3 76416 1 1
+/favorite-wordpress-templates/ 1 19309 0 0
+/2009/05/ 2 33632 1 1
+/wp-includes/version.php 1 0 0 0
+/boot-camp-is-obsolete-try-paralells-desktop/ 1 21726 0 0
+/working-on-a-twitter-plugin/ 2 47376 0 0
+/spring-flavoured-theme/ 1 43590 0 0
+/wp-includes/class-wp-editor.php 1 0 0 0
+/boot-camp-version-112/ 1 17653 0 0
+/search-term-highlighter/ 3 75315 0 1
+/cheking-if-my-plugins-still-works/ 2 35502 1 0
+/fgreen-theme/ 2 119954 1 1
+/category/fun/feed/ 1 10646 0 0
+/leopard-earlier-than-expected/feed/ 1 787 0 1
+/fahlstadse-widget/ 2 35700 0 0
+/scaffold-new-wp-theme/feed/ 1 1610 0 0
+/wordpress/plugins/wp-forum/feed/ 5 9411 5 5
+/wp-includes/nav-menu.php 1 0 0 0
+/wp-forum-version-17/ 1 21595 0 0
+/browser-stats-may/ 1 22819 0 0
+/wp-includes/cache.php 1 0 0 0
+/wp-includes/rss.php 1 149 0 0
+/author/admin/page/2/ 1 25041 1 0
+/wp-forum-20-release-is-close/ 1 31903 0 0
+/google-calendar/ 2 35210 0 0
+/happy-new-year/ 1 27528 0 0
+/made-a-new-theme/feed/ 1 1604 0 0
+/image-gallery-plugin-on-the-way/ 2 45436 0 0
+/macbook-report-2/ 1 19928 0 0
+/wp-includes/class-wp-customize-control.php 1 0 0 0
+/category/wordpress/page/9/ 1 24862 1 0
+/fquick-released/ 1 17989 0 0
+/my-first-texas-hold-em/feed/ 1 0 0 0
+/made-a-new-theme/ 2 40422 2 2
+/wp-includes/class-phpmailer.php 1 0 0 0
+/anybody-care-for-a-wasp/ 3 53640 1 1
+/wp-includes/revision.php 1 0 0 0
+/2014/11/ 1 17799 1 1
+/all-my-themes-are-niow-valid-xhtml/ 1 29171 0 0
+/page/8/ 1 24639 0 0
+/fglare-theme-on-the-way/ 2 62508 0 0
+/page/20/ 5 124255 0 0
+/its-official-the-zune-zucks/ 1 17816 0 0
+/fquick-updated-with-archive-page/ 1 17944 0 0
+/looking-for-moderators/ 2 39610 1 1
+/wp-includes/class-wp-http-ixr-client.php 1 152 0 0
+/using-wordpress-filters-a-tutorial/ 2 40006 0 0
+/currently-working-on-update-service-for-fgallery/ 1 21737 0 0
+/drooling-over-imac-concept/ 1 20955 0 0
+/fedora-6-for-paralells-desktop/ 1 19257 0 0
+/fsubtle-wordpress-theme-released/ 1 24538 0 0
+/wordpress-theme-fglare-released/ 1 27961 0 0
+/wordpress-3-8-1-maintenance-release/ 2 35430 0 0
+/scaffold-new-wp-theme/ 1 19526 0 0
+/wp-includes/post-template.php 1 140 0 0
+/itunes-702/ 2 37884 0 0
+/wp-includes/class-feed.php 1 0 0 0
+/fquick/ 2 42154 0 0
+/wp-plugins/fmoblog/feed/ 1 0 1 1
+/category/wordpress/page/6/ 1 24692 1 1
+/simple-php-template/ 2 53678 0 0
+/cssreboot/ 2 35028 0 0
+/flight-live-search-bug-fixed/ 2 56930 0 0
+/wp-includes/class-wp-xmlrpc-server.php 1 151 0 0
+/a-powermac-g6-anyone/ 2 35370 0 0
+/wp-includes/atomlib.php 1 0 0 0
+/wp-includes/feed-atom-comments.php 1 164 0 0
+/page/16/ 1 24558 0 0
+/wordpress/themes/feed/ 1 3617 0 0
+/what-would-make-you-switch/ 4 149288 1 1
+/wp-content/themes/strapboot/font-awesome/fonts/fontawesome-webfont.svg 1 287007 0 1
+/page/21/ 6 150453 0 0
+/fgallery-version-23-released/ 2 42724 1 1
+/wp-cal-03/ 2 43502 0 0
+/farc-my-second-wordpress-plugin/ 2 36130 1 1
+/wordpress-20-release-on-december-26/ 3 57042 1 1
+/secrets-of-wordpress-plugins/ 2 78162 0 0
+/coming-updates-to-fgallery/ 1 19903 0 0
+/server-side-blink/ 2 35204 0 0
+/mac-os-x-tiger-on-x86-2/ 1 17759 0 0
+/veerle-on-creating-mac-os-x-desktops/feed/ 1 808 1 1
+/wp-includes/locale.php 1 0 0 0
+/wp-includes/default-constants.php 1 0 0 0
+/page/23/ 1 24935 0 0
+/been-quite-busy/ 1 22520 0 0
+/windows-vista-is-going-gold/ 1 17764 0 0
+/fvision-wordpress-theme-released/ 2 36474 0 0
+/wp-includes/taxonomy.php 1 0 0 0
+/wp-includes/feed-rss2-comments.php 1 164 0 0
+/fgallery-version-02-released/ 2 35496 0 0
+/working-on-a-twitter-plugin/feed/ 1 4646 0 0
+/currently-working-on-a-new-theme-2/ 1 33102 0 0
+/wordpress/plugins/fquick/ 4 80728 3 0
+/complete-re-write-of-wp-forum/ 2 69744 0 0
+/author/admin/page/23/ 1 24958 1 1
+/wp-content/themes/strapboot/lib/bootstrap-3.3.1/fonts/glyphicons-halflings-regular.eot 1 20335 0 0
+/wp-includes/wlwmanifest.xml 3 3135 0 2
+/page/22/ 3 74703 2 3
+/wordpress-3-8-1-maintenance-release/feed/ 1 805 0 0
+/css-mania-goes-live/ 1 17657 0 0
+/category/sidenotes/page/3/ 1 24239 0 0
+/wordpress/plugins/ 7 118461 1 1
+/ipod-hi-fi/ 1 17602 0 0
+/my-new-web-hotel-host/ 1 17718 0 0
+/anatomy-of-a-wp-theme-a-tutorial/ 2 115976 0 0
+/cheking-if-my-plugins-still-works/feed/ 1 801 0 0
+/macbook-pro-shipping-now-even-faster/ 1 17789 0 0
+/bad-beat-of-the-day/ 2 37026 0 0
+/fantastic-five-from-fredrik-fahlstad/ 1 20618 0 0
+/wp-content/plugins/wpforum/assets/font-awesome/fonts/fontawesome-webfont.woff 4 261808 1 0
+/google-blog-search-is-now-up/ 1 17703 0 0
+/fgala-wordpress-theme/ 2 47980 0 0
+/wp-includes/class.wp-dependencies.php 1 0 0 0
+/ms-firefox/ 2 37610 0 0
+/super-site-for-windows/ 1 17802 0 0
+/fmoblog-user/ 2 36968 0 0
+/page/15/ 1 24343 0 0
+/2005/12/ 1 19439 1 1
+/screenpire/ 3 55557 1 0
+/archives/ 5 80930 1 1
+/wp-cron.php 3 0 3 3
+/2009/11/ 1 16812 0 0
+/wp-includes/ms-deprecated.php 1 0 0 0
+/wp-includes/class-smtp.php 1 0 0 0
+/category/tutorials/ 1 26878 1 1
+/karlstad-offroad/ 1 17575 0 0
+/category/wordpress/ 1 25294 1 1
+/slap-your-macbook/feed/ 1 0 0 0
+/avant-browser/ 2 35262 0 0
+/boost-your-wireless-router/ 1 18674 0 0
+/got-some-more-time-now/feed/ 1 2685 0 1
+/wp-includes/script-loader.php 1 0 0 0
+/wp-forum-2-4-released/ 1 27958 0 0
+/fmoblog-version-12/ 1 18522 0 0
+/currently-working-on-a-new-wordpress/ 2 51430 0 0
+/wordpress/plugins/fmoblog/ 7 173418 4 3
+/wp-forum-21-released/ 2 41878 0 0
+/wp-includes/category.php 1 0 0 0
+/support-forums/ 2 44282 0 0
+/a-100-years-ago/ 1 20662 0 0
+/wysiwyg-editor-for-mt-3x/ 1 17827 0 0
+/simple-php-image-gallery/ 2 57488 1 1
+/wp-forum-version-173/ 2 85236 0 0
+/dont-you-just-hate/ 2 66036 0 0
+/redesign/ 2 50748 0 0
+/firefox-patch/ 1 17606 0 0
+/wordpress/plugins/wp-cal/feed/ 1 9261 1 0
+/wp-content/index.php 1 0 1 1
+/wp-strapboot-wordpress-theme/ 6 109014 3 3
+/wp-includes/canonical.php 1 0 0 0
+/page/17/ 1 24158 0 0
+/wp-includes/ms-load.php 1 0 0 0
+/wp-includes/class-oembed.php 1 0 0 0
+/free-blog-editor/ 1 17621 0 0
+/ajax-tutorial/ 1 32091 0 0
+/qt-tutorial/ 1 26842 0 0
+/theme-bugs-fixed/ 3 61677 1 1
+/no-19-of-the-best-55/ 1 21876 0 0
+/how-about-a-feed-plugin/ 1 25571 0 0
+/fahlstad-featured-on-screenspire/ 2 52412 0 0
+/why-is-it-so-hard/ 1 27189 0 0
+/excellent-business-theme-by-themeally/feed/ 1 811 0 0
+/wp-forum-18-under-development/ 2 41652 1 1
+/just-got-my-moblog-going/ 1 22271 0 0
+/wordpress-support-forum/ 2 35310 0 0
+/im-feeling-lucky/feed/ 1 755 1 1
+/page/5/ 3 75317 1 1
+/wp-forum-beta-2-running/ 1 45188 0 0
+/wp-includes/class-wp-customize-setting.php 1 0 0 0
+/my-vision-code-snippet/ 2 35696 0 0
+/firefox-20-alpha-is-here/ 1 17792 0 0
+/wp-includes/kses.php 1 0 0 0
+/page/4/ 1 25016 0 0
+/fsimple-theme/ 2 45942 1 1
+/fgallery-updates-to-come/ 1 30524 0 0
+/fmoblog-version-21-released/ 1 25412 0 0
+/category/tutorials/feed/ 1 63141 1 1
+/fquick-released/feed/ 1 0 0 0
+/wordpress-tabbed-sidebar-panel-part-1/ 1 23876 0 0
+/funique-wp-theme-released/ 3 93318 1 1
+/wordpress/plugins/fmoblog/feed/ 1 8630 0 1
+/solve-this-one/ 1 18815 0 0
+/wordpress-themes-demo-blog/ 1 25563 0 0
+/macbook-report-part-three/ 1 22826 0 0
+/wp-includes/plugin.php 1 0 0 0
+/wp-includes/feed-atom.php 1 155 0 1
+/fvariant-wordpress-theme-released/ 1 19678 0 0
+/2015/01/ 1 16838 0 0
+/boxnet-free-online-storage/ 2 56118 1 0
+/wordpress/plugins/wp-forum/ 8 164072 6 6
+/boot-camp/ 1 17699 0 0
+/new-wordpress-theme-fscreen/ 1 38220 0 0
+/2008/10/ 1 21647 0 0
+/wp-cal-version-02/ 1 19172 0 0
+/some-screenshots-wp-forum-20-admin-area/ 2 64106 0 0
+/name-suggestions-for-theme/ 2 65426 1 1
+/page/3/ 1 24501 0 1
+/wp-content/themes/strapboot/font-awesome/fonts/fontawesome-webfont.woff 8 523616 4 4
+/mac-os-x-1047-is-here/feed/ 1 765 1 1
+/wp-includes/bookmark-template.php 1 0 0 0
+/wp-includes/template-loader.php 1 154 0 0
+/fgala-released/ 1 17580 0 0
+/wp-includes/class-wp-image-editor.php 1 0 0 0
+/wp-includes/class-json.php 1 0 0 0
+/2006/02/ 2 42608 1 1
+/wp-forum-verision-16/ 1 26125 0 0
+/wp-includes/class-wp-customize-manager.php 1 0 0 0
+/what-would-make-you-switch/feed/ 1 10797 0 0
+/wordpress-4-0-1/ 1 18138 0 0
+/fmoblog-version-14-released/ 1 19085 0 0
+/wp-includes/formatting.php 1 0 0 0
+END_SIDER
